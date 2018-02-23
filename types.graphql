@@ -31,8 +31,8 @@ type Water @model {
   registrerad_datum:String,
   observationsdatum: String,
   temp: String,
-  matt_flode: String,
-  bedomt_flode: String,
+  mattflode: String,
+  bedomtflode: String,
   ph: String,
   ledningsformaga: String,
   notering: String
