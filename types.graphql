@@ -23,21 +23,10 @@ type Sight  @model{
 
 type Water @model {
   id:  ID! @isUnique,
-  namn: String,
-  kommunkod: String,
-  latitude: String,
-  longitud: String,
-  lagesnoggrannhet:String,
-  kalltyp: String,
-  akvifertyp: String,
-  registreraddatum:String,
-  observationsdatum: String,
-  temp: Float,
-  mattflode: String,
-  bedomtflode: String,
-  ph: String,
-  ledningsformaga: String,
-  notering: String
+  title: String,
+  latitude: Float,
+  longitud: Float,
+
 }
 
 type Person @model {
@@ -64,19 +53,8 @@ extend type Mutation {
 }
 
 extend type Water {
-  createWater(namn: String,
-  kommunkod: String,
-  lagesnoggrannhet:String,
+  createWater(title:String
   latitude: String,
-        longitud: String,
-  kalltyp: String,
-  akvifertyp: String,
-  registreraddatum:String,
-  observationsdatum: String,
-  temp: Float,
-  mattflode: String,
-  bedomtflode: String,
-  ph: String,
-  ledningsformaga: String,
-  notering: String): Water
+  longitud: String,
+): Water
 }
