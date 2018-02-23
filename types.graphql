@@ -60,3 +60,19 @@ type Person @model {
 extend type Mutation {
   createPerson(longitude: Float, latitude: Float): Person
 }
+
+extend type Water {
+  createWater(namn: String,
+  kommunkod: String,
+  lagesnoggrannhet:String,
+  kalltyp: String,
+  akvifertyp: String,
+  registreraddatum:String,
+  observationsdatum: String,
+  temp: String,
+  mattflode: String,
+  bedomtflode: String,
+  ph: String,
+  ledningsformaga: String,
+  notering: String): Water
+}
