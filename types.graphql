@@ -10,7 +10,7 @@ type User @model {
   # Uncomment below - you ucan declare relations between models like this
   # posts: [Post!]! @relation(name: "UserPosts")
 }
-type Object @model{
+type Sight  @model{
   id: ID! @isUnique
   title: String
   body: String
