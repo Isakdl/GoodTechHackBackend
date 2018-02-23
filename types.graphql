@@ -57,8 +57,6 @@ type Person @model {
 #   author: User! @relation(name: "UserPosts")
 # }
 
-type Mutation @model {
-  id: ID! @isUnique
-  longitude: Float!
-  latitude: Float!)
+type Mutation {
+  createPerson(longitude: Float, latitude: Float): Person
 }
