@@ -22,14 +22,20 @@ type Sight  @model{
 }
 
 type Water @model {
-  id: ID! @isUnique
-  name: String
-  latitude:Float
-  longitude:Float
-  createdAt: DateTime!
-  updatedAt: DateTime!
-  # Uncomment below - you can declare relations between models like this
-  # posts: [Post!]! @relation(name: "UserPosts")
+  id:  ID! @isUnique,
+  namn: String,
+  kommunkod: String,
+  lagesnoggrannhet:String,
+  kalltyp: String,
+  akvifertyp: String,
+  registrerad_datum:String,
+  observationsdatum: String,
+  temp: String,
+  matt_flode: String,
+  bedomt_flode: String,
+  ph: String,
+  ledningsformaga: String,
+  notering: String
 }
 
 type Person @model {

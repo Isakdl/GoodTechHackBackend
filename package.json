@@ -1,5 +1,8 @@
 {
   "name": "GoodTechHackBackend",
   "version": "1.0.0",
-  "description": "My Graphcool Service"
+  "description": "My Graphcool Service",
+  "dependencies": {
+    "utm": "^1.1.1"
+  }
 }
