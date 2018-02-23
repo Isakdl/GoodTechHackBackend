@@ -28,7 +28,7 @@ type Water @model {
   lagesnoggrannhet:String,
   kalltyp: String,
   akvifertyp: String,
-  registrerad_datum:String,
+  registreraddatum:String,
   observationsdatum: String,
   temp: String,
   mattflode: String,
