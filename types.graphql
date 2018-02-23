@@ -7,7 +7,7 @@ type User @model {
   longitude:Float
   createdAt: DateTime!
   updatedAt: DateTime!
-  # Uncomment below - you ucan declare relations between models like this
+  # Uncomment below - you can declare relations between models like this
   # posts: [Post!]! @relation(name: "UserPosts")
 }
 type Sight  @model{
@@ -20,13 +20,31 @@ type Sight  @model{
   createdAt: DateTime!
   updatedAt: DateTime!
 }
+
+type Water @model {
+  id:  ID! @isUnique,
+  namn: String,
+  kommunkod: String,
+  lagesnoggrannhet:String,
+  kalltyp: String,
+  akvifertyp: String,
+  registrerad_datum:String,
+  observationsdatum: String,
+  temp: String,
+  matt_flode: String,
+  bedomt_flode: String,
+  ph: String,
+  ledningsformaga: String,
+  notering: String
+}
+
 type Person @model {
   id: ID! @isUnique
   latitude:Float
   longitude:Float
   createdAt: DateTime!
   updatedAt: DateTime!
-  # Uncomment below - you ucan declare relations between models like this
+  # Uncomment below - you can declare relations between models like this
   # posts: [Post!]! @relation(name: "UserPosts")
 }
 # Uncomment the model below as well
