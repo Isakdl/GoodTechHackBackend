@@ -56,7 +56,3 @@ type Person @model {
 #   # Every relation also required a back-relation (to determine 1:1, 1:n or n:m)
 #   author: User! @relation(name: "UserPosts")
 # }
-
-type Mutation @model {
-  createPerson(longitude: Float, latitude: Float): Person
-}
