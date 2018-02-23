@@ -39,7 +39,7 @@ type Water @model {
 }
 
 type Person @model {
-  id: String @isUnique
+  id: ID! @isUnique
   latitude:Float
   longitude:Float
   createdAt: DateTime!
