@@ -7,8 +7,7 @@ type User @model {
   longitude:Float
   createdAt: DateTime!
   updatedAt: DateTime!
-  # Uncomment below - you can declare relations between models like this
-
+  # Uncomment below - you ucan declare relations between models like this
   # posts: [Post!]! @relation(name: "UserPosts")
 }
 type Object @model{
@@ -21,8 +20,15 @@ type Object @model{
   createdAt: DateTime!
   updatedAt: DateTime!
 }
-
-
+type Person @model {
+  id: ID! @isUnique
+  latitude:Float
+  longitude:Float
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  # Uncomment below - you ucan declare relations between models like this
+  # posts: [Post!]! @relation(name: "UserPosts")
+}
 # Uncomment the model below as well
 
 # type Post @model {
