@@ -30,7 +30,7 @@ type Water @model {
   akvifertyp: String,
   registreraddatum:String,
   observationsdatum: String,
-  temp: String,
+  temp: Double,
   mattflode: String,
   bedomtflode: String,
   ph: String,
