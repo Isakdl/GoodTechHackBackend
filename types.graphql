@@ -29,11 +29,6 @@ type Person @model {
   # Uncomment below - you ucan declare relations between models like this
   # posts: [Post!]! @relation(name: "UserPosts")
 }
-
-type Query {
-  allPersons:[Person!]!
-  allObjects:[Object!]!
-}
 # Uncomment the model below as well
 
 # type Post @model {
