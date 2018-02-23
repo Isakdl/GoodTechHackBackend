@@ -1,0 +1,3 @@
+targets:
+  GoodTechHackBackend: shared-eu-west-1/cjdzsmim2332t0175wp40g39p
+  default: GoodTechHackBackend
